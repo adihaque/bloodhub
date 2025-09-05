@@ -1,0 +1,128 @@
+/* Quick Register Modal Specific Styles */
+.quick-register-location .location-selector {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  box-shadow: none;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.quick-register-location .location-header {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+}
+
+.quick-register-location .location-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Remove auto-detect button completely */
+.quick-register-location .auto-detect-btn {
+  display: none;
+}
+
+.quick-register-location .location-inputs {
+  gap: 16px;
+}
+
+.quick-register-location .input-group {
+  gap: 6px;
+}
+
+.quick-register-location .input-group label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.quick-register-location .input-group select {
+  padding: 10px 14px;
+  font-size: 14px;
+  min-height: 40px;
+  border: 1px solid #e1e8ed;
+  border-radius: 6px;
+}
+
+.quick-register-location .selected-location {
+  margin-top: 16px;
+  padding: 12px;
+}
+
+.quick-register-location .selected-location p {
+  font-size: 14px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 640px) {
+  .quick-register-location .location-selector {
+    padding: 12px;
+  }
+  
+  .quick-register-location .location-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .quick-register-location .input-group select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Ensure form elements don't overflow */
+.quick-register-modal form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.quick-register-modal input,
+.quick-register-modal select,
+.quick-register-modal textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Override any conflicting styles */
+.quick-register-modal * {
+  box-sizing: border-box;
+}
+
+/* Ensure proper spacing and layout */
+.quick-register-modal .space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.quick-register-modal .flex {
+  width: 100%;
+}
+
+.quick-register-modal .grid {
+  width: 100%;
+}
+
+/* Checkbox styling improvements */
+.quick-register-modal input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.quick-register-modal .gap-2 {
+  gap: 0.5rem;
+}
+
+/* Ensure checkbox and label alignment */
+.quick-register-modal .flex.items-center {
+  align-items: center;
+}
+
+.quick-register-modal .flex.items-center label {
+  margin: 0;
+  line-height: 1.2;
+}

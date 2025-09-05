@@ -1,0 +1,102 @@
+/* Quick Request Modal Specific Styles */
+.quick-request-location .location-selector {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  box-shadow: none;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.quick-request-location .location-header {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+}
+
+.quick-request-location .location-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.quick-request-location .auto-detect-btn {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.quick-request-location .location-inputs {
+  gap: 16px;
+}
+
+.quick-request-location .input-group {
+  gap: 6px;
+}
+
+.quick-request-location .input-group label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.quick-request-location .input-group select {
+  padding: 10px 14px;
+  font-size: 14px;
+  min-height: 40px;
+  border: 1px solid #e1e8ed;
+  border-radius: 6px;
+}
+
+.quick-request-location .selected-location {
+  margin-top: 16px;
+  padding: 12px;
+}
+
+.quick-request-location .selected-location p {
+  font-size: 14px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 640px) {
+  .quick-request-location .location-selector {
+    padding: 12px;
+  }
+  
+  .quick-request-location .location-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .quick-request-location .auto-detect-btn {
+    align-self: center;
+    width: fit-content;
+  }
+  
+  .quick-request-location .input-group select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Ensure form elements don't overflow */
+.quick-request-modal form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.quick-request-modal .grid {
+  width: 100%;
+}
+
+.quick-request-modal input,
+.quick-request-modal select,
+.quick-request-modal textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Override any conflicting styles */
+.quick-request-modal * {
+  box-sizing: border-box;
+}

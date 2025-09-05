@@ -1,14 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // Remove experimental.appDir if not using app directory features
   images: {
-    unoptimized: true,
+    domains: ['firebasestorage.googleapis.com'],
   },
-}
+  env: {
+    CUSTOM_KEY: 'my-value',
+  },
+  output: 'export',      // static export
+  trailingSlash: true,   // for Firebase hosting
+  distDir: 'out',        // build output folder
+};
 
-export default nextConfig
+export default nextConfig;

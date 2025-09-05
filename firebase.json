@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "bloodhub-c2812",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

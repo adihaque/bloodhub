@@ -32,7 +32,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined)
 export function Providers({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [emergencyMode, setEmergencyMode] = useState(false)
-  const [currentIncident, setCurrentIncident] = useState<string | null>("Milestone Jet Crash tragedy: Diabari, Uttara")
+  const [currentIncident, setCurrentIncident] = useState<string | null>(null)
 
   return (
     <AppContext.Provider
